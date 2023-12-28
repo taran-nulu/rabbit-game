@@ -10,6 +10,8 @@ public class InteractionSystem : MonoBehaviour
 
     public GameObject detectedObject;
 
+    public List<GameObject> pickedItems = new List<GameObject>();
+
     void Update()
     {
         if(DetectObject())
@@ -39,5 +41,10 @@ public class InteractionSystem : MonoBehaviour
             detectedObject = obj.gameObject;
             return true;
         }
+    }
+
+    public void ItemPickUp(GameObject item)
+    {
+        pickedItems.Add(item);
     }
 }

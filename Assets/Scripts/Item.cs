@@ -19,7 +19,9 @@ public class Item : MonoBehaviour
         switch(type)
         {
             case InteractionType.PICKUP:
+                FindObjectOfType<InteractionSystem>().ItemPickUp(gameObject);
                 Debug.Log("Pick Up Item");
+                Destroy(gameObject);
                 break;
             case InteractionType.TALK:
                 Debug.Log("Hello, i am talking");
