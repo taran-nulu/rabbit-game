@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Assets
 {
-    public class shrink : MonoBehaviour
+    public class shrink: MonoBehaviour
     {
         // Start is called before the first frame update
         void Start()
