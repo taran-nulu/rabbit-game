@@ -46,24 +46,17 @@ public class Item : MonoBehaviour
             case InteractionType.SHRINK_WIZ:
                 Dialogue pop = GameObject.FindGameObjectWithTag("Wizard").GetComponent<Dialogue>();
                 pop.NPCDialogue(popupText);
-                // GameObject.FindGameObjectWithTag("Shrink").Renderer.enabled;
                 shrinkTalked = true;
-                // shrinkCharm.setActive(true);
-                // Debug.Log("Hello, i am talking");
                 break;
             case InteractionType.GROW_WIZ:
+                growTalked = true;
                 Dialogue pop1 = GameObject.FindGameObjectWithTag("Wizard").GetComponent<Dialogue>();
                 pop1.NPCDialogue(popupText);
-                growTalked = true;
-                // growCharm.setActive(true);
-                // Debug.Log("Hello, i am talking");
                 break;
             case InteractionType.INVIS_WIZ:
                 Dialogue pop2 = GameObject.FindGameObjectWithTag("Wizard").GetComponent<Dialogue>();
                 pop2.NPCDialogue(popupText);
                 invisTalked = true;
-                // invisCharm.setActive(true);
-                // Debug.Log("Hello, i am talking");
                 break;
             case InteractionType.CARROT:
                 Debug.Log("You Win!");

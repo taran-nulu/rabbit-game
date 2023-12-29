@@ -6,16 +6,16 @@ using static Item;
 public class SpriteRender : MonoBehaviour
 {
 
-    public Renderer charm1;
-    public Renderer charm2;
-    public Renderer charm3;
+    public Renderer shrink;
+    public Renderer grow;
+    public Renderer invis;
 
     // Start is called before the first frame update
     void Start()
     {
-        charm1.enabled = false;
-        charm2.enabled = false;
-        charm3.enabled = false;
+        shrink.enabled = false;
+        grow.enabled = false;
+        invis.enabled = false;
     }
 
     // Update is called once per frame
@@ -23,15 +23,20 @@ public class SpriteRender : MonoBehaviour
     {
         if (Item.shrinkTalked == true)
         {
-            charm1.enabled = true;
+            shrink.enabled = true;
+            Debug.Log("shrink");
         }
+
         if (Item.growTalked == true)
         {
-            charm2.enabled = true;
+            grow.enabled = true;
+            Debug.Log("grow");
         }
+
         if (Item.invisTalked == true)
         {
-            charm3.enabled = true;
+            invis.enabled = true;
+            Debug.Log("invis");
         }
     }
 }

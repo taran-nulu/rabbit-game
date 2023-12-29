@@ -1727,9 +1727,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b444d2edbf3c27a48a24926e4c5bf310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charm1: {fileID: 374527002}
-  charm2: {fileID: 1412910629}
-  charm3: {fileID: 1608596278}
+  shrink: {fileID: 374527002}
+  grow: {fileID: 1412910629}
+  invis: {fileID: 1608596278}
 --- !u!4 &1167940598
 Transform:
   m_ObjectHideFlags: 0
@@ -2225,7 +2225,7 @@ Transform:
   m_GameObject: {fileID: 1412910626}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.76, y: 1.2, z: 0}
+  m_LocalPosition: {x: -6.25, y: -1.36, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2260,7 +2260,7 @@ Transform:
   m_GameObject: {fileID: 1423265037}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9, y: 1.78, z: 0}
+  m_LocalPosition: {x: -5.11, y: 0.03, z: 0}
   m_LocalScale: {x: 0.10671892, y: 0.11610983, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2278,7 +2278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25d65d283cf07ef4c90873c852f7acdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 4
+  type: 6
   popupText: Wow! You're so charming! Take this charm to help you on your journey.
     Hold Left Shift to grow and jump higher.
 --- !u!114 &1423265040
@@ -2622,7 +2622,7 @@ Transform:
   m_GameObject: {fileID: 1553783682}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.44, y: -0.75, z: 0}
+  m_LocalPosition: {x: -5.51, y: -1.17, z: 0}
   m_LocalScale: {x: 0.65799284, y: 0.07157996, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
