@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Dialogue;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Item : MonoBehaviour
 {
     public enum InteractionType {NONE, PICKUP, TALK}
     public InteractionType type;
+    public string popupText;
 
     private void Reset()
     {
@@ -19,11 +21,12 @@ public class Item : MonoBehaviour
         switch(type)
         {
             case InteractionType.PICKUP:
-                FindObjectOfType<InteractionSystem>().ItemPickUp(gameObject);
                 Debug.Log("Pick Up Item");
                 Destroy(gameObject);
                 break;
             case InteractionType.TALK:
+                Dialogue pop = GameObject.FindGameObjectWithTag("Wizard").GetComponent<Dialogue>();
+                pop.NPCDialogue(popupText);
                 Debug.Log("Hello, i am talking");
                 break;
             default:

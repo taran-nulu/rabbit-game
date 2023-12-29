@@ -23,12 +23,12 @@ public class InteractionSystem : MonoBehaviour
         }
     }
 
-    bool InteractionInput()
+    public bool InteractionInput()
     {
         return Input.GetKeyDown(KeyCode.E);
     }
 
-    bool DetectObject()
+    public bool DetectObject()
     {
         Collider2D obj = Physics2D.OverlapCircle(detectionPoint.position, detectionRadius, detectionLayer);
         if(obj == null)
@@ -41,10 +41,5 @@ public class InteractionSystem : MonoBehaviour
             detectedObject = obj.gameObject;
             return true;
         }
-    }
-
-    public void ItemPickUp(GameObject item)
-    {
-        pickedItems.Add(item);
     }
 }
