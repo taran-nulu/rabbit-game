@@ -8,12 +8,12 @@ public class ShrinkAbility : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            transform.localScale = new Vector3(0.045f, 0.04f, 1);
+            transform.localScale = new Vector3(0.045f, 0.04f, 0);
         }
 
         if (Input.GetKeyUp(KeyCode.F))
         {
-            transform.localScale = new Vector3(0.09f, 0.08f, 1);
+            transform.localScale = new Vector3(0.09f, 0.08f, 0);
         }
     }
 }
