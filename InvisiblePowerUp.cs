@@ -28,6 +28,14 @@ public class NewBehaviourScript : MonoBehaviour
             col.a = 1;
             character.color = col;
         }
+        
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            invisible = true;
+            activationTime = 0;
+            col.a = .2f;
+            character.color = col;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -38,7 +46,9 @@ public class NewBehaviourScript : MonoBehaviour
             activationTime = 0;
             col.a = .2f;
             character.color = col;
+            other.gameObject.SetActive(false);
         }
+
     }
 }
 
