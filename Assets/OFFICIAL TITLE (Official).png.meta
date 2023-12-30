@@ -1,0 +1,570 @@
+fileFormatVersion: 2
+guid: 4a751ab0511ca484b8b1adb5d388c63c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1584005646642176367
+    second: OFFICIAL TITLE (Official)_0
+  - first:
+      213: -7064091857760669780
+    second: OFFICIAL TITLE (Official)_1
+  - first:
+      213: -2862232366142791314
+    second: OFFICIAL TITLE (Official)_2
+  - first:
+      213: 1084074468599670548
+    second: OFFICIAL TITLE (Official)_3
+  - first:
+      213: 3615201889862678480
+    second: OFFICIAL TITLE (Official)_4
+  - first:
+      213: 2152410088097428420
+    second: OFFICIAL TITLE (Official)_5
+  - first:
+      213: 8172020708455569388
+    second: OFFICIAL TITLE (Official)_6
+  - first:
+      213: 4143743308073949982
+    second: OFFICIAL TITLE (Official)_7
+  - first:
+      213: -7261276009427673306
+    second: OFFICIAL TITLE (Official)_8
+  - first:
+      213: -506785728417618473
+    second: OFFICIAL TITLE (Official)_9
+  - first:
+      213: -8936511056779008237
+    second: OFFICIAL TITLE (Official)_10
+  - first:
+      213: 3337378430910400255
+    second: OFFICIAL TITLE (Official)_11
+  - first:
+      213: 7091154706251549509
+    second: OFFICIAL TITLE (Official)_12
+  - first:
+      213: 7252950079349196698
+    second: OFFICIAL TITLE (Official)_13
+  - first:
+      213: -7636950267043842825
+    second: OFFICIAL TITLE (Official)_14
+  - first:
+      213: 6293641325046773495
+    second: OFFICIAL TITLE (Official)_15
+  - first:
+      213: 2925944322895070598
+    second: OFFICIAL TITLE (Official)_16
+  - first:
+      213: 5476860646728961915
+    second: OFFICIAL TITLE (Official)_17
+  - first:
+      213: 8782897893461845442
+    second: OFFICIAL TITLE (Official)_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 8
+        width: 49
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61e1524eb48bf510800000000000000
+      internalID: 1584005646642176367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 8
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf227de1ed47fd90800000000000000
+      internalID: -7064091857760669780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 8
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61ee67e3de4748d0800000000000000
+      internalID: -2862232366142791314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_3
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 8
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41724fa4cf76b0f00800000000000000
+      internalID: 1084074468599670548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_4
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 64
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d7f594f6f6cb2230800000000000000
+      internalID: 3615201889862678480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_5
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 8
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3b3083295eedd10800000000000000
+      internalID: 2152410088097428420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_6
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 8
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce751a08989d86170800000000000000
+      internalID: 8172020708455569388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_7
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 8
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b562e8598818930800000000000000
+      internalID: 4143743308073949982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_8
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 64
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f5ff9f0f3ca3b90800000000000000
+      internalID: -7261276009427673306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_9
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 8
+        width: 30
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d52e68a01987f8f0800000000000000
+      internalID: -506785728417618473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_10
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3172651aa822bf380800000000000000
+      internalID: -8936511056779008237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_11
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6077f2000c05e20800000000000000
+      internalID: 3337378430910400255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_12
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b867182a7d86260800000000000000
+      internalID: 7091154706251549509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_13
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a97004d5ba7a7a460800000000000000
+      internalID: 7252950079349196698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_14
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 8
+        width: 12
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4f685c13a140690800000000000000
+      internalID: -7636950267043842825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_15
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6b123a071875750800000000000000
+      internalID: 6293641325046773495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_16
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 0
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6854bbefbda0b9820800000000000000
+      internalID: 2925944322895070598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_17
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f88949db7b10c40800000000000000
+      internalID: 5476860646728961915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OFFICIAL TITLE (Official)_18
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 8
+        width: 13
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5e15ea91f13e970800000000000000
+      internalID: 8782897893461845442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

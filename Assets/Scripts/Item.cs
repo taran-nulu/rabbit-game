@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static Dialogue;
 
 [RequireComponent(typeof(BoxCollider2D))]
@@ -67,6 +68,7 @@ public class Item : MonoBehaviour
                 break;
             case InteractionType.CARROT:
                 Debug.Log("You Win!");
+                SceneManager.LoadScene(2);
                 break;
             default:
                 Debug.Log("No Item");

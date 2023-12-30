@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6f1b6fa70417a294ead8ae39b827c21f
+guid: 6c2e3d8395f40cd4481463930c66f5ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1272567004988492174
-    second: walking_dude_0
+      213: 3980168229369012863
+    second: start_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walking_dude_0
+      name: start_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1063
-        height: 1931
+        width: 661
+        height: 261
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e89c83dd2f019a110800000000000000
-      internalID: 1272567004988492174
+      spriteID: f72e5d1bae56c3730800000000000000
+      internalID: 3980168229369012863
       vertices: []
       indices: 
       edges: []
@@ -130,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      walking_dude_0: 1272567004988492174
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
