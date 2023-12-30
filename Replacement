@@ -1,0 +1,112 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using static UnityEditor.Progress;
+
+
+public class PlayerMovement : MonoBehaviour
+{
+    float horizontal;
+    float speed = 5f;
+    bool isFacingRight = false;
+    float jumpingPower = 4f;
+    bool isGrounded = false;
+
+    Rigidbody2D rb;
+    Animator animator;
+
+
+
+
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+
+    }
+
+    void Update()
+    {
+        horizontal = Input.GetAxis("Horizontal");
+        Flip();
+        if (Input.GetButtonDown("Jump") && !isGrounded)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            isGrounded = false;
+            animator.SetBool("isJumping", !isGrounded);
+            
+
+        }
+
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }
+
+        if (Item.canGrow == true)
+        {
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                transform.localScale = new Vector3(2, 2, 0);
+                speed = 6f;
+                jumpingPower = 12f;
+            }
+
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                transform.localScale = new Vector3(1, 1, 0);
+                speed = 8f;
+                jumpingPower = 8f;
+            }
+        }
+        // Shrink Ability (Seperate files were not working)
+        if (Item.canShrink == true)
+        {
+            if (Input.GetKeyDown(KeyCode.LeftControl))
+            {
+                transform.localScale = new Vector3(0.5f, 0.5f, 0);
+                speed = 12f;
+                jumpingPower = 6f;
+            }
+
+            if (Input.GetKeyUp(KeyCode.LeftControl))
+            {
+                transform.localScale = new Vector3(1f, 1f, 0);
+                speed = 8f;
+                jumpingPower = 8f;
+            }
+        }
+        Flip();
+    }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        animator.SetFloat("xVelocity", Math.Abs(rb.velocity.x));
+        animator.SetFloat("yVelocity", rb.velocity.y);
+    }
+
+    void Flip()
+    {
+        if (isFacingRight && horizontal > 0f || !isFacingRight && horizontal < 0f)
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 ls = transform.localScale;
+            ls.x *= -1f;
+            transform.localScale = ls;
+        }
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        isGrounded = true;
+        animator.SetBool("isJumping", !isGrounded);
+    }
+
+}
