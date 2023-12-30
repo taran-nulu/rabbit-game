@@ -1400,7 +1400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 4
   popupText: Wow! You're so charming! Take this charm to help you on your journey.
-    Press Q to turn invisible briefly.
+    Press Q to turn invisible briefly with a 10 second cooldown.
 --- !u!114 &1038223565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2957,7 +2957,7 @@ GameObject:
   - component: {fileID: 2090132789}
   - component: {fileID: 2090132791}
   - component: {fileID: 2090132792}
-  - component: {fileID: 2090132794}
+  - component: {fileID: 2090132793}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -3170,7 +3170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6e4a707395059d4ca719cefbd298e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2090132794
+--- !u!114 &2090132793
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3179,9 +3179,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2090132783}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1ab5ae3161c17c42911a10707dc539c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9223a36f835b42446937ae2450c7f090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cooldown: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

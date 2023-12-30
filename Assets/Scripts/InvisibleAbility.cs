@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using static Item;
 
 public class NewBehaviourScript : MonoBehaviour
 {
@@ -9,6 +11,10 @@ public class NewBehaviourScript : MonoBehaviour
     private Color col;
     private float activationTime;
     private bool invisible;
+
+    public float Cooldown;
+
+    float PowerUp;
 
     void Start()
     {
@@ -21,6 +27,7 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         activationTime += Time.deltaTime;
         if(invisible && activationTime >= 3)
         {
@@ -29,25 +36,22 @@ public class NewBehaviourScript : MonoBehaviour
             character.color = col;
         }
         
-        if(Input.GetKeyDown(KeyCode.Q))
+        if (Item.canInvis == true)
         {
-            invisible = true;
-            activationTime = 0;
-            col.a = .2f;
-            character.color = col;
+            if(Input.GetKeyDown(KeyCode.Q))
+            {
+                if(Time.time - PowerUp < Cooldown) 
+                {
+                    return;
+                }
+                PowerUp = Time.time;
+                invisible = true;
+                activationTime = 0;
+                col.a = .2f;
+                character.color = col;
+            }
         }
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.tag == "Invisible")
-        {
-            invisible = true;
-            activationTime = 0;
-            col.a = .2f;
-            character.color = col;
-            other.gameObject.SetActive(false);
-        }
+        
 
     }
 }
