@@ -37,14 +37,14 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
-                transform.localScale = new Vector3(0.18f, 0.16f, 0);
+                transform.localScale = new Vector3(2, 2, 0);
                 speed = 6f;
                 jumpingPower = 12f;
             }
 
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
-                transform.localScale = new Vector3(0.09f, 0.08f, 0);             
+                transform.localScale = new Vector3(1, 1, 0);             
                 speed = 8f;
                 jumpingPower = 8f;
             }
@@ -54,14 +54,14 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftControl))
             {
-                transform.localScale = new Vector3(0.045f, 0.04f, 0);
+                transform.localScale = new Vector3(0.5f, 0.5f, 0);
                 speed = 12f;
                 jumpingPower = 6f;
             }
 
             if (Input.GetKeyUp(KeyCode.LeftControl))
             {
-                transform.localScale = new Vector3(0.09f, 0.08f, 0);
+                transform.localScale = new Vector3(1f, 1f, 0);
                 speed = 8f;
                 jumpingPower = 8f;
             }

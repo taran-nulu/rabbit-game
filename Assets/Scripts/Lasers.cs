@@ -7,6 +7,9 @@ public class Lasers : MonoBehaviour
 {
     Vector2 startPos;
 
+    [SerializeField] private AudioSource deathSoundEffect;
+
+
     private void Start()
     {
         startPos = transform.position;
@@ -25,6 +28,7 @@ public class Lasers : MonoBehaviour
 
     void Die()
     {
+        deathSoundEffect.Play();
         Respawn();
     }
     void Respawn()
