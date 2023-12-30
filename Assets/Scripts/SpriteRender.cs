@@ -15,12 +15,17 @@ public class SpriteRender : MonoBehaviour
     {
         shrink.enabled = false;
         grow.enabled = false;
-        invis.enabled = false;
+        // invis.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Item.invisTalked == true)
+        {
+            invis.enabled = true;
+            Debug.Log("invis");
+        }
         if (Item.shrinkTalked == true)
         {
             shrink.enabled = true;
@@ -33,10 +38,5 @@ public class SpriteRender : MonoBehaviour
             Debug.Log("grow");
         }
 
-        if (Item.invisTalked == true)
-        {
-            invis.enabled = true;
-            Debug.Log("invis");
-        }
     }
 }

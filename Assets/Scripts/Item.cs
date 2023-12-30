@@ -14,9 +14,9 @@ public class Item : MonoBehaviour
     public static bool canGrow;
     public static bool canInvis;
 
-    public static bool shrinkTalked;
-    public static bool growTalked;
-    public static bool invisTalked;
+    public static bool shrinkTalked = false;
+    public static bool growTalked = false;
+    public static bool invisTalked = false;
 
     [SerializeField] private AudioSource pickUpSoundEffect;
 
@@ -51,17 +51,19 @@ public class Item : MonoBehaviour
             case InteractionType.SHRINK_WIZ:
                 Dialogue pop = GameObject.FindGameObjectWithTag("Wizard").GetComponent<Dialogue>();
                 pop.NPCDialogue(popupText);
+                Debug.Log("shrink talked");
                 shrinkTalked = true;
                 break;
             case InteractionType.GROW_WIZ:
                 growTalked = true;
                 Dialogue pop1 = GameObject.FindGameObjectWithTag("Wizard").GetComponent<Dialogue>();
                 pop1.NPCDialogue(popupText);
+                Debug.Log("grow talked");
                 break;
             case InteractionType.INVIS_WIZ:
+                invisTalked = true;
                 Dialogue pop2 = GameObject.FindGameObjectWithTag("Wizard").GetComponent<Dialogue>();
                 pop2.NPCDialogue(popupText);
-                invisTalked = true;
                 break;
             case InteractionType.CARROT:
                 Debug.Log("You Win!");

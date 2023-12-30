@@ -11,11 +11,19 @@ public class PlayerMovement : MonoBehaviour
     public float jumpingPower = 8f;
     private bool isFacingRight = true;
 
+    // bool isGrounded = false;
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
     [SerializeField] private AudioSource jumpSoundEffect;
+
+    void Start()
+    {
+        // rd = GetComponent<Rigidbody2D>();
+        // animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -25,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             jumpSoundEffect.Play();
+            // animator.SetBool("IsJumping", !isGrounded);
+            // isGrounded = false;
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
@@ -67,13 +77,14 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         
-
         Flip();
     }
 
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        // animator.SetFloat("xVelocity", Math.Abs(rb.velocity.x));
+        // animator.SetFloat("yVelocity", Math.Abs(rb.velocity.y));
     }
 
     private bool IsGrounded()
@@ -92,15 +103,3 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
-
-
-// public class GrowthAbility : MonoBehaviour
-//     {
-//         // PlayerMovement movement = new PlayerMovement();
-//         public bool bigMode;
-
-//         void Update()
-//         {
-            
-//         }
-//     }

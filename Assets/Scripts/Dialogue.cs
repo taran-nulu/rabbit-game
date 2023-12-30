@@ -14,6 +14,6 @@ public class Dialogue : MonoBehaviour
     {
         dialogueBox.SetActive(true);
         dialogueText.text = text;
-        animator.SetTrigger("popup");
+        animator.SetTrigger("pop");
     }
 }
