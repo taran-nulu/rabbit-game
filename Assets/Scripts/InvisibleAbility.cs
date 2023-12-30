@@ -16,6 +16,8 @@ public class NewBehaviourScript : MonoBehaviour
 
     float PowerUp;
 
+    public static bool invincible = false;
+
     void Start()
     {
         character = GetComponent<SpriteRenderer>();
@@ -34,6 +36,7 @@ public class NewBehaviourScript : MonoBehaviour
             invisible = false;
             col.a = 1;
             character.color = col;
+            invincible = false;
         }
         
         if (Item.canInvis == true)
@@ -49,6 +52,7 @@ public class NewBehaviourScript : MonoBehaviour
                 activationTime = 0;
                 col.a = .2f;
                 character.color = col;
+                invincible = true;
             }
         }
         

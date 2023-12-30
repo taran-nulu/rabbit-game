@@ -8,6 +8,7 @@ TagManager:
   - Grow
   - Shrink
   - Invis
+  - Obstacle
   layers:
   - Default
   - TransparentFX
