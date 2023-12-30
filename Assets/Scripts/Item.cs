@@ -18,6 +18,8 @@ public class Item : MonoBehaviour
     public static bool growTalked;
     public static bool invisTalked;
 
+    [SerializeField] private AudioSource pickUpSoundEffect;
+
     private void Reset()
     {
         GetComponent<BoxCollider2D>().isTrigger = true;
@@ -29,16 +31,19 @@ public class Item : MonoBehaviour
         switch(type)
         {
             case InteractionType.SHRINK:
+                pickUpSoundEffect.Play();
                 canShrink = true;
                 Debug.Log("SHRINK");
                 Destroy(gameObject);
                 break;
             case InteractionType.GROW:
+                pickUpSoundEffect.Play();
                 canGrow = true;
                 Debug.Log("GROW");
                 Destroy(gameObject);
                 break;            
             case InteractionType.INVISIBLE:
+                pickUpSoundEffect.Play();
                 canInvis = true;
                 Debug.Log("John Cena?");
                 Destroy(gameObject);
